@@ -326,7 +326,11 @@ nav ul li a {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: left;
-    width: 300px;
+    width: 100%;
+    min-height: 200px; /* Ensures cards are at least this height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .review-card p {
@@ -370,15 +374,22 @@ nav ul li a {
     background:#EDBE31;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
+    box-shadow: 0 4px 8px #EDBE31 ;
+    text-align: center;
     width: 300px;
 }
 
 .blog-card img {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
+    
+        width: 100%;
+        height: 200px; /* Set a fixed height */
+        object-fit: cover; /* Ensures images cover the area */
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+    
+    
+
 
 .blog-card h3 {
     font-size: 24px;
